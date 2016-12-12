@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#795548"
+    android:backgroundTint="#795548"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.harshil.notes.MainActivity">
+
+    <Button
+        android:text="Add a New Note.."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:onClick="newNote"
+        android:padding="10sp"
+        android:textSize="30sp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/button"
+        android:layout_margin="5sp"
+        android:id="@+id/listview"
+        android:backgroundTint="#FFF59D"
+        android:backgroundTintMode="screen"
+        android:background="#FFF59D" />
+</RelativeLayout>
